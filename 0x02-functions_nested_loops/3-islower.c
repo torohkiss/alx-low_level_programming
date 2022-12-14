@@ -3,7 +3,7 @@
 
 /**
  * _islower - check for alphabets
- * @c - alphabet to check
+ * @c: alphabet to check
  *
  * Return: 1 or 0
  */
