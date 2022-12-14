@@ -23,6 +23,6 @@ void print_alphabet_x10(void)
 			s++;
 		}
 		a++;
+		putchar('\n');
 	}
-	putchar('\n');
 }
