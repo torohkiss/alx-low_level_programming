@@ -4,8 +4,6 @@
 /**
  * print_line - prints line
  * @n: number of lines to print
- *
- * Return: void
  */
 
 void print_line(int n)
@@ -14,14 +12,11 @@ void print_line(int n)
 
 	if (n <= 0)
 		_putchar('\n');
-	else
+	a = 0;
+	while (a < n)
 	{
-		a = 0;
-		while (a < n)
-		{
-			_putchar('-');
-			a++;
-		}
-		_putchar('\n');
+		_putchar('-');
+		a++;
 	}
+	_putchar('\n');
 }
