@@ -14,10 +14,7 @@ int helperFunction(int num, int i)
 	{
 		if (num % i == 0)
 			return (0);
-		else
-		{
-			return (helperFunction(num, i + 1));
-		}
+		return (helperFunction(num, i + 1));
 	}
 	else
 	{
