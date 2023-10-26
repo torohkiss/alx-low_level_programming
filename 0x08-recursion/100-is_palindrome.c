@@ -36,6 +36,7 @@ int _strlen_recursion(char *s)
  * check_pal - helper two
  * @s: the stribg
  * @i: iterator
+ * @len: length
  *
  * Return: 0
  */
