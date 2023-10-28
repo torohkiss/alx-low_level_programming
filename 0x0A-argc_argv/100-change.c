@@ -11,42 +11,42 @@
 
 int main(int argc, char *argv[])
 {
-	int cents, coins = 0;
-
-	if (argc != 2)
+	int change, num;
+	
+	change = 0;
+	
+	if (argc == 2)
+	{
+		num = atoi(argv[1]);
+		if (num > 0)
+		{
+			for (; num >= 25; change++)
+			{
+				num = num - 25;
+			}
+			for (; num >= 10; change++)
+			{
+				num = num - 10;
+			}
+			for (; num >= 5; change++)
+			{
+				num = num - 5;
+			}
+			for (; num >= 2; change++)
+			{
+				num = num - 2;
+			}
+			for (; num >= 1; change++)
+			{
+				num = num - 1;
+			}
+		}
+		printf("%d\n", change);	
+		return (0);
+	}
+	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	cents = atoi(argv[1]);
-
-	while (cents > 0)
-	{
-		coins++;
-		if ((cents - 25) >= 0)
-		{
-			cents -= 25;
-			continue;
-		}
-		if ((cents - 10) >= 0)
-		{
-			cents -= 10;
-			continue;
-		}
-		if ((cents - 5) >= 0)
-		{
-			cents -= 5;
-			continue
-		}
-		if ((cents - 2) >= 0)
-		{
-			cents -= 2;
-			continue;
-		}
-		cents--;
-	}
-	printf("%d\n", coins);
-
-	return (0);
 }
