@@ -26,7 +26,7 @@ char *_strdup(char *str)
 	if (s == NULL)
 		return (NULL);
 
-	for (i = 0; i < str; i++)
+	for (i = 0; i < j; i++)
 		s[i] = str[i];
 	s[j] = '\0';
 
