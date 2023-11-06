@@ -6,13 +6,15 @@
  * print_dog - prints a struct dog
  * @d: the pointer
  *
- * Return: 0
+ * Return: void
  */
 
 void print_dog(struct dog *d)
 {
 	if (d == 0)
+	{
 		return;
+	}
 	else
 	{
 		if (d->name == NULL)
