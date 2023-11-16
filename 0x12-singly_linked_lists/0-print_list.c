@@ -3,6 +3,13 @@
 #include <strings.h>
 #include "lists.h"
 
+/**
+ * print_list - prints all elements of a list_t list.
+ * @h: piunter to list
+ *
+ * Return: 0
+ */
+
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
