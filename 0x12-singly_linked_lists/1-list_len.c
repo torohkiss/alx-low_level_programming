@@ -12,18 +12,12 @@
 
 size_t list_len(const list_t *h)
 {
-	int count = 0;
-	struct list_s *ptr;
+	size_t count = 0;
 
-	if (h == NULL)
-		printf("[0] (nil)\n");
-
-	ptr = h;
-
-	while (ptr != NULL)
+	while (h != NULL)
 	{
 		count++;
-		ptr = ptr->next;
+		h = h->next;
 	}
 
 	return (count);
