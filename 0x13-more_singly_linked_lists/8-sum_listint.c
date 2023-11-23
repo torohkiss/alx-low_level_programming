@@ -10,18 +10,15 @@
 
 int sum_listint(listint_t *head)
 {
-	listint_t *ptr;
 	int sum = 0;
 
 	if (!head)
 		return (0);
 
-	ptr = head;
-
-	while (ptr != NULL)
+	while (head)
 	{
-		ptr = ptr->next;
-		sum += ptr->n;
+		sum += head->n;
+		head = head->next;
 	}
 
 	return (sum);
