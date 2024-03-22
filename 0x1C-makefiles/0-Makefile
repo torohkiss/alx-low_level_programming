@@ -1,6 +1,4 @@
-.PHONY all clean
-
-all school
+all : main.o school.o
 
 school: school.c
-	gcc -o school school.c
+	gcc main.c school.c -o school
